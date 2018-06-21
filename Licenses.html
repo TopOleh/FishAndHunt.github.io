@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ліцензії</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/Styles.css">
+
+    <script src="js/common.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body class="homepage">
+<!-- Head-->
+<div id="head" >
+    <div id="logo">
+        <div class="container">
+
+            <!-- Logo -->
+            <h1><a href="#" style="font-family: 'Bodoni MT Black'">риболовля та полювання</a></h1>
+        </div>
+    </div>
+    <div class="container">
+
+        <!-- Nav - menu for pages-->
+        <nav id="nav">
+            <ul>
+                <li ><a href="index.html">Головна</a></li>
+                <li ><a href="Fishing.html">Рибалка</a></li>
+                <li ><a href="Hunting.html">Полювання</a></li>
+                <li class="active"><a href="Licenses.html">Ліцензії</a></li>
+                <li ><a href="Rules.html">Закони</a></li>
+                <li ><a href="contactsForUsers.html">Контакти</a></li>
+                <li ><a href="Anouns.html">Відгуки</a></li>
+                <li ><a href="fishingForReg.html">Трофеї</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</div>
+<!-- /Head -->
+<form action="http://localhost:3005/js/authenticate-controller" method="post">
+
+    <div id="login">
+        <h4 id="authorization">Авторизація</h4>
+        <div id="slide">
+            <input type="email" name="uEmail" id="uEmail" placeholder="Email" pattern="^[-._a-z0-9]+@(?:[a-z0-9][-a-z0-9]+\.)+[a-z]{2,6}$" required autofocus /><br />
+            <input type="password" name="uPassword" id="uPassword" placeholder="Password" pattern="^[-.A-Za-zА-Яа-яЁё0-9]{7,16}" required /><br />
+            <a href="http://localhost:3000/register.html"> Реєстрація</a>
+            <input type="submit" value="Прийняти" id = "Submit">
+        </div>
+    </div>
+</form>
+<!--Banner for page-->
+<div id="slider">
+    <div id="polosa">
+        <a href="#licenses hunting img"><img src="img/LicensesImg/hunting-261632_1280.jpg"  /></a>
+        <a href="#licenses boat img"><img src="img/LicensesImg/boat-387038_1280.jpg"  /></a>
+        <a href="#licenses angler img"><img src="img/LicensesImg/angler-3308264_1280.jpg"  /></a>
+        <a href="#licenses dog img"><img src="img/LicensesImg/dog-387039_1280.jpg"  /></a>
+        <a href="#licenses nets img"><img src="img/LicensesImg/fishing-nets-2536425_1280.jpg"  /></a>
+        <a href="#licenses elk img"><img src="img/LicensesImg/elk-1031696_1280.jpg"  /></a>
+        <a href="#licenses hiking img"><img src="img/LicensesImg/hiking-338228_1280.jpg"  /></a>
+        <a href="#licenses sunset img"><img src="img/LicensesImg/sunset-3310090_1280.jpg"  /></a>
+    </div>
+</div>
+<!-- /Banner for page-->
+<button class="down" >Вниз</button>
+<!-- Main contain-->
+<div id="main">
+    <!--Main Content-->
+    <div class="container">
+        <div class="divider"></div>
+        <div class="row">
+            <div class="6u">
+                <section>
+                    <header>
+                        <h2>Мисливські ліцензії</h2>
+                    </header>
+                    <div class="informBox">
+                        <table>
+                            <h3><a name="licenses hunting img"></a>Індивідуальне полювання</h3>
+                            <hr>
+                            <h4>з вишок, підходу або з використанням мисливських собак</h4>
+                            <h4>Середні цени в угіддях на 2017-2018р.</h4>
+                            <tr><th colspan="3"><h2>Послуги</h2></th></tr>
+                                <tr>
+                                    <td><a name="licenses dog img"></a>Єегерська служба</td>
+                                    <td>два працівники</td>
+                                    <td>1 000 грн</td>
+                                </tr>
+                                <tr>
+                                    <td>Транспорт</td>
+                                    <td>джип або бортовий УАЗ</td>
+                                    <td>1 500 грн</td>
+                                </tr>
+                                <tr>
+                                    <td>Ветеринарне дослідження м'яса</td>
+                                    <td>за всі здобуті трофеї</td>
+                                    <td>200 грн</td>
+                                </tr>
+                            <tr><th colspan="3"><h2><a name="licenses hiking img"></a></a>Розтушовка звіра</h2></th></tr>
+                                <tr>
+                                    <th>Тип</th>
+                                    <th>Вага</th>
+                                    <th>Ціна</th>
+                                </tr>
+                                <tr>
+                                    <td>Хутрові</td>
+                                    <td></td>
+                                    <td>100 грн/голова</td>
+                                </tr>
+                                <tr>
+                                    <td>Копитні</td>
+                                    <td>до 100 кг</td>
+                                    <td>300 грн/голова</td>
+                                </tr>
+                                <tr>
+                                    <td>Копитні</td>
+                                    <td>від 101 кг</td>
+                                    <td>500 грн/голова</td>
+                                </tr>
+                            <tr><th colspan="3"><h2>Плата за добутих тварин</h2></th></tr>
+                            <tr><th colspan="3"><h4>Дикий кабан</h4></th></tr>
+                            <tr>
+                                <th>Стать</th>
+                                <th>Вага</th>
+                                <th>Ціна</th>
+                            </tr>
+                            <tr>
+                                <td>Самець</td>
+                                <td>до 60 кг</td>
+                                <td>3 600 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Самець</td>
+                                <td>від 61 кг до 100 кг</td>
+                                <td>5 600 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Самець</td>
+                                <td>від 101 кг до 150 кг</td>
+                                <td>8 600 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Самець</td>
+                                <td>від 151 кг до 200 кг</td>
+                                <td>10 600 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Самець</td>
+                                <td>від 201 кг</td>
+                                <td>15 600 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Самка</td>
+                                <td>від 61 кг до 100 кг</td>
+                                <td>10 600 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Самка</td>
+                                <td>від 101 кг до 150 кг</td>
+                                <td>16 600 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Самка</td>
+                                <td>від 151 кг </td>
+                                <td>20 600 грн</td>
+                            </tr>
+                            <tr><th colspan="3"><h4>Косуля</h4></th></tr>
+                            <tr>
+                                <th>Стать</th>
+                                <th>Форма ріг</th>
+                                <th>Ціна</th>
+                            </tr>
+                            <tr>
+                                <td>Самець</td>
+                                <td>нетрофейної якості (несформовані роги до двох відростків)</td>
+                                <td>3 200 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Самець</td>
+                                <td>трофейної якості (сформовані роги на три відростки)</td>
+                                <td>4 200 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Самка</td>
+                                <td></td>
+                                <td>3 200 грн</td>
+                            </tr>
+                            <tr><th colspan="3"><h4><a name="licenses elk img"></a>Олень благородний</h4></th></tr>
+                            <tr>
+                                <th>Стать</th>
+                                <th>Роги</th>
+                                <th>Ціна</th>
+                            </tr>
+                            <tr>
+                                <td>Самець</td>
+                                <td>роги до 5 кг</td>
+                                <td>30 000 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Самець</td>
+                                <td>роги більше 5 кг</td>
+                                <td>50 000 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Самка</td>
+                                <td></td>
+                                <td>35 000 грн</td>
+                            </tr><tr><th colspan="3"><h4>Лань Європейська</h4></th></tr>
+                            <tr>
+                                <th>Стать</th>
+                                <th></th>
+                                <th>Ціна</th>
+                            </tr>
+                            <tr>
+                                <td>Самець</td>
+                                <td></td>
+                                <td>20 000 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Самка</td>
+                                <td></td>
+                                <td>25 000 грн</td>
+                            </tr>
+                            </tr><tr><th colspan="3"><h4>Муфлон</h4></th></tr>
+                            <tr>
+                                <th>Стать</th>
+                                <th></th>
+                                <th>Ціна</th>
+                            </tr>
+                            <tr>
+                                <td>Самець</td>
+                                <td></td>
+                                <td>15 000 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Самка</td>
+                                <td></td>
+                                <td>20 000 грн</td>
+                            </tr>
+
+                            </tr>
+                            <tr><th colspan="3"><h4>Заєць-русак,лисиця,бобер,куниця</h4></th></tr>
+                            <tr>
+                                <th>Тип</th>
+                                <th>Норма відстрілу</th>
+                                <th>Ціна</th>
+                            </tr>
+                            <tr>
+                                <td>Заєць</td>
+                                <td>один на день</td>
+                                <td>150 грн/день</td>
+                            </tr>
+                            <tr>
+                                <td>Лисиця</td>
+                                <td>нелімітовано</td>
+                                <td>150 грн/день</td>
+                            </tr>
+                            <tr>
+                                <td>Бобер</td>
+                                <td></td>
+                                <td>500 грн/день</td>
+                            </tr>
+                            <tr>
+                                <td>Куниця</td>
+                                <td></td>
+                                <td>500 грн/день</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                        <header>
+                            <h2>Дозвіл на промисловий вилов риби.</h2>
+                        </header>
+                    <hr>
+                    <div class="informBox">
+                        <p><a name="licenses boat img"></a>Промисловий вилов риби є видом спеціального використання водних біоресурсів, що включає в себе
+                            вилучення, приймання, зберігання, переробку, транспортування тощо, а також постачання палива,
+                            води, тари, продовольства для функціонування суден флоту рибної промисловості та їх екіпажів
+                            у рибогосподарських водних об'єктах (їх частинах).
+                        </p>
+                        <p><a name="licenses nets img"></a>Відповідно до чинного законодавства України для промислового вилову риби суб’єктам господарювання
+                            необхідно отримати дозвіл на спеціальне використання водних біоресурсів. Даний дозвіл видається
+                            як юридичним особам, так і фізичним особам-підприємцям.
+                        </p>
+                        <p>
+                        Дозвіл видається на кожний водний об’єкт строком на 5 років.
+                        </p>
+                        <h4>Строки і вартість:</h4>
+                        <ul>
+                            <li>Строк отримання дозволу: дозвіл видається протягом 30 календарних днів після державної реєстрації
+                                наказу Мінагрополітики про розподіл лімітів водних біоресурсів (листопад - грудень).</li>
+                            <li>Вартість юридичних послуг - 3000 гривень.</li>
+                            <li>Державні платежі відсутні.</li>
+                        </ul>
+                        <table>
+                            <h3><a name="licenses angler img"></a>Індивідуальна рибалка</h3>
+                            <hr>
+                            <h4><a name="licenses sunset img"></a>Середні цени на приватних озерах</h4>
+                            <tr><th colspan="3"><h2>Біла риба та хижак</h2></th></tr>
+                            <tr>
+                                <th>Тип</th>
+                                <th>Період</th>
+                                <th>Ціна</th>
+                            </tr>
+                            <tr>
+                                <td>Рибальство з дамби</td>
+                                <td>світловий день</td>
+                                <td>60,00 грн.</td>
+                            </tr>
+                            <tr>
+                                <td>Рибальство з берега вудочка, фідер, спінінг</td>
+                                <td>світловий день</td>
+                                <td>120,00 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Спортивна карпова рибалка</td>
+                                <td> світловий день/доба.</td>
+                                <td>125,00 грн/250,00 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Ловля хижих видів риб</td>
+                                <td> світловий день</td>
+                                <td>50,00 грн</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- /Main Content -->
+</div>
+<!-- /Main -->
+
+<!-- Footer -->
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="6u">
+                <section>
+                    <pre>FishingAndHunting©2017-2018 | Полювання та риболовля                                           <a href="#">Наверх</a></pre>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Footer -->
+</body>
+</html>

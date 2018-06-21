@@ -1,0 +1,486 @@
+body
+  width: 100%
+  height: 100%
+  background: url("../img/background.png")
+  margin: 0 0 50px
+
+body, input, textarea, select
+  font-family: "Times New Roman", Arial
+  font-size: 14pt
+
+
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+  color: inherit
+  text-decoration: none
+
+
+em, i
+  font-style: italic
+
+a
+  color: #2e458b
+
+a:hover
+  text-decoration: none
+
+sub
+  position: relative
+  top: 0.5em
+  font-size: 0.8em
+
+sup
+  position: relative
+  top: -0.5em
+  font-size: 0.8em
+
+hr
+  border: 0
+  border-top: solid 1px #ddd
+
+
+blockquote
+  border-left: solid 0.5em #ddd
+  padding: 1em 0 1em 2em
+  font-style: italic
+
+p, ul, ol, dl, table
+  margin-bottom: 1em
+
+
+p
+  text-indent: 20px
+
+
+header
+  margin-bottom: 2em
+
+section
+  header
+    h2
+      font-size: 2.8em
+    h4
+      font-size: 2em
+
+
+header .byline
+  display: block
+  margin: 0.5em 0 0 0
+  padding: 0 0 0.5em 0
+
+
+footer
+  margin-top: 1em
+
+
+br.clear
+  clear: both
+
+
+section,
+article
+  margin-bottom: 3em
+
+
+section > :last-child,
+article > :last-child
+  margin-bottom: 0
+
+
+section:last-child,
+article:last-child
+  margin-bottom: 0
+
+
+.row > section,
+.row > article
+  margin-bottom: 0
+
+
+
+.image
+  display: inline-block
+
+
+.image img
+  display: block
+  height: 270px
+  width: 270px
+
+
+.image.featured
+  display: block
+  margin: 0 0 2em 0
+
+.image.full
+
+  display: block
+  margin-bottom: 2em
+
+
+.image.left
+  float: left
+  margin: 0 2em 2em 0
+
+
+.image.centered
+  display: block
+  margin: 0 0 2em 0
+
+
+.image.centered img
+  margin: 0 auto
+  width: auto
+
+#head
+  position: relative
+  float: left
+
+
+#logo
+  position: relative
+
+
+#logo h1
+  position: relative
+  top: 0.4em
+  left: 0
+  letter-spacing: 2px
+
+
+#logo
+  display: block
+  text-transform: uppercase
+  text-decoration: none
+  font-size: 1.3em
+  color: green
+
+
+#nav
+  font-size: 1.2em
+  padding: 1em 0em 1em 0em
+
+#nav > ul > li
+  display: inline-block
+
+
+#nav > ul > li > a
+  display: inline-block
+  padding: 0.80em 1em
+  letter-spacing: 1px
+  text-decoration: none
+  text-transform: uppercase
+  font-size: 0.8em
+  color: black
+  outline: 0
+
+#nav li.active a
+  background: black
+  border-radius: 25px
+  color: white
+
+
+#nav > ul > li > ul
+  display: none
+
+
+
+#banner
+  width: 1300px
+  height: 450px
+  position: relative
+  background-size: cover
+  color: white
+  //overflow: hidden
+
+#banner #container
+  width: 10400px
+
+#banner img
+  width: 1300px
+  height: 450px
+  float: left
+
+#banner::after
+  content: ""
+  display: block
+  clear: both
+
+
+
+#main
+  position: relative
+  padding: 5em 0em
+
+#sidebar1 header h2,
+#sidebar2 header h2
+  font-size: 1.8em
+   
+
+body 
+  min-width: 1200px
+
+
+.container 
+  width: 1200px
+  margin-left: 200px
+  margin-right: auto
+
+#container
+  width: 1200px
+  margin-left: 200px
+  margin-right: auto
+
+.container.small 
+  width: 900px
+
+
+.container.big 
+  width: 100%
+  max-width: 1500px
+  min-width: 1200px
+
+
+
+
+.\31 u
+   width: 100%
+   width: 91.6666666667%
+   width: 83.3333333333%
+.\39 u
+   width: 75%
+.\38 u
+   width: 66.6666666667%
+.\37 u
+   width: 58.3333333333%
+.\35 u
+   width: 41.6666666667%
+.\34 u
+   width: 33.3333333333%
+.\33 u
+   width: 25%
+.\32 u
+   width: 16.6666666667%
+.\31 u
+   width: 8.3333333333%
+.\-11u
+   margin-left: 91.6666666667%
+.\-10u
+   margin-left: 83.3333333333%
+.\-9u
+   margin-left: 75%
+.\-8u
+   margin-left: 66.6666666667%
+.\-7u
+   margin-left: 58.3333333333%
+.\-6u
+   margin-left: 50%
+.\-5u
+   margin-left: 41.6666666667%
+.\-4u
+   margin-left: 33.3333333333%
+.\-3u
+   margin-left: 25%
+.\-2u
+   margin-left: 16.6666666667%
+.\-1u
+   margin-left: 8.3333333333%
+
+.row > * 
+  padding: 50px 0 0 50px
+  float: left
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  -o-box-sizing: border-box
+  -ms-box-sizing: border-box
+  box-sizing: border-box
+
+
+.row + .row > * 
+  padding-top: 50px
+
+
+.row 
+  margin-left: -50px
+
+
+/* Rows */
+
+.row:after
+  display: block
+  clear: both
+  height: 0
+
+
+.row:first-child > * 
+  padding-top: 0
+
+
+.row > * 
+  padding-top: 0
+
+#footer
+  position: fixed
+  left: 0
+  right: 0
+  bottom: 0
+  background: #e5ecf5
+  color: darkslateblue
+  font-size: 18pt
+  padding-bottom: 10px
+
+
+#footer header
+  color: darkslategrey
+
+#copyright
+  position: relative
+  padding: 3em 0em
+  text-align: center
+  color: black
+
+
+#copyright .container
+#copyright a
+  text-decoration: none
+  color: black
+
+
+.fa
+  text-decoration: none
+
+
+.fa.solo
+.fa.solo span
+  display: none
+
+
+.fa:before
+  display: inline-block
+  font-family: FontAwesome
+  font-size: 1.25em
+  text-decoration: none
+  font-style: normal
+  font-weight: normal
+  line-height: 1
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+#slider
+  width: 1300px
+  height: 450px
+  margin-left: 200px
+  overflow: hidden
+
+
+#polosa
+  background: pink
+  width: 10400px
+  position: relative
+  left: 0
+  transition: all ease 1s
+
+
+#polosa img
+  width: 1300px
+  height: 450px
+  float: left
+
+
+
+#polosa::after
+  content: ""
+  display: block
+  clear: both
+
+
+#user\ name
+  width: 370px
+  height: 30px
+
+#user\ input
+  width: 1000px
+  height: 400px
+
+table tr td #user\ anouns
+  width: 1000px
+  height: 370px
+
+div #sidebar1,#sidebar2
+  width: 50%
+
+.informBox
+  font-size: 18pt
+  table, th, td
+    font-size: 21pt
+    border-collapse: collapse
+    border: 3px solid black
+
+#login
+  position: absolute
+  margin-left: 1350px
+  margin-top: 3em
+  border: 1px solid olivedrab
+  padding: 0 10px
+  border-radius: 30px
+  #slide
+    display: none
+
+  h4
+    font-style: oblique
+    text-align: center
+
+  input, a
+    margin-bottom: 20px
+    text-decoration: none
+    backface-visibility: hidden
+    color: green
+    background-color: inherit
+    border: none
+
+.places
+  position: relative
+  margin: 50px 750px
+  font-size: 20pt
+  display: block
+  text-align: center
+
+  input , textarea
+    padding: 10px
+    margin-bottom: 20px
+    width: 350px
+    font-size: 16pt
+    text-align: center
+    border-radius: 20px
+
+
+.addMain
+  position: relative
+  margin-left: 200px
+  .inputTrophies
+    margin-left: 450px
+    input
+      padding: 10px
+      margin-bottom: 20px
+      width: 350px
+      font-size: 16pt
+      text-align: center
+      border-radius: 20px
+    input[type="radio"]
+      width: 30px
+
+.down
+  width: 128px
+  height: 128px
+  right: 2%
+  top: 50%
+  padding: 3px
+  position: fixed
+  background: url("../img/arrow_down_1.ico")
+  font-size: 18pt
+  border: none
+
+
+.down:active
+    box-shadow: 2px -3px 15px 0px #666
+    transform: translateY(10px)

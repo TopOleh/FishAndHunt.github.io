@@ -1,0 +1,88 @@
+body{
+    min-height: 100%;
+    width: auto;
+    background-size: cover;
+}
+.menu{
+    height: 100px;
+    width: auto;
+    background: url("Images/pexels-photo-88473.jpeg") no-repeat;
+    background-size: cover;
+}
+.head a{
+    height: auto;
+    width: auto;
+    text-decoration: none;
+}
+.head a:hover{
+    text-decoration: underline black;
+}
+.head a h2 b{
+    margin: 0px;
+    color: black;
+}
+.menu ul{
+    width: 600px;
+    list-style-type: none;
+}
+.menu ul li a{
+    float: left;
+    margin: 35px 10px;
+    height: 50px;
+    width: 100px;
+    color: black;
+    background: none;
+    text-decoration: none;
+    font-size: 19pt;
+    text-align: center;
+    text-transform: uppercase;
+}
+#middle{
+    min-height: 100%;
+    width: auto;
+    background-size: cover;
+    position: relative;
+}
+.active{
+    text-decoration: underline red;
+}
+/*********************************************************************************************************/
+/* Third class********************************************************************************************/
+/*********************************************************************************************************/
+
+footer
+{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #723911;
+    height: 30px;
+}
+footer .item
+{
+    width: 33%;
+    display: flex;
+;
+}
+footer .container
+{
+    display: flex;
+}
+.position
+{
+    position: fixed;
+    background-color: #2e458b;
+    color: yellow;
+    z-index: 2;
+}
+.position.top
+{
+    top: 10px;
+}
+.position.bottom
+{
+    bottom: 10px;
+}
+
+

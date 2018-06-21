@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Authorization</title>
+    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/Styles.css">
+    <link rel="stylesheet" href="css/register.css">
+
+    <script src="js/common.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body class="homepage">
+<!-- Head-->
+<div id="head" >
+    <div id="logo">
+        <div class="container">
+
+            <!-- Logo -->
+            <h1><a href="#" style="font-family: 'Bodoni MT Black'">риболовля та полювання</a></h1>
+        </div>
+    </div>
+    <div class="container">
+
+        <!-- Nav - menu for pages-->
+        <nav id="nav">
+            <ul>
+                <li ><a href="index.html">Головна</a></li>
+                <li ><a href="register.html">Реєстрація</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</div>
+<!-- /Head -->
+<!--Banner for page-->
+<div id="slider">
+    <div id="polosa">
+        <img src="img/Header/BowMan.jpeg"  />
+        <img src="img/Header/LakeWithMounains.jpeg"  />
+        <img src="img/Header/MountainsGreen.jpeg"  />
+        <img src="img/Header/MountainsWithClouds.jpeg"  />
+        <img src="img/Header/MountainsWithWater.jpeg"  />
+        <img src="img/Header/Spinning.jpeg"  />
+        <img src="img/Header/Water.jpeg"  />
+        <img src="img/Header/WinterMountais.jpeg"  />
+    </div>
+</div>
+<button id="down button" >Scroll Down</button>
+<!-- /Banner for page-->
+<form action="http://localhost:3005/js/authenticate-controller" method="post">
+    <div class="testbox" style="background-color: inherit">
+        <form action="/" >
+            <div class="accounttype">
+                <input type="email" name="uEmail" id="uEmail" placeholder="Email" pattern="^[-._a-z0-9]+@(?:[a-z0-9][-a-z0-9]+\.)+[a-z]{2,6}$" required autofocus /><br />
+                <input type="password" name="uPassword" id="uPassword" placeholder="Password" pattern="^[-.A-Za-zА-Яа-яЁё0-9]{7,16}" required /><br />
+                <input type="reset" value="Відмінити" class="register reset">
+                <input type="submit" value="Прийняти" id = "Submit">
+            </div>
+        </form>
+    </div>
+</form>
+<!-- Footer -->
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="6u">
+                <section>
+                    <pre>FishingAndHunting©2017-2018 | Полювання та риболовля                                           <a href="#">Наверх</a></pre>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Footer -->
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hunting and Fising</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/Styles.css">
+
+    <script src="js/common.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body class="homepage">
+<!-- Head-->
+<div id="head" >
+    <div id="logo">
+        <div class="container">
+
+            <!-- Logo -->
+
+            <h1><a href="#" style="font-family: 'Bodoni MT Black'">риболовля та полювання</a></h1>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- Nav - menu for pages-->
+        <nav id="nav">
+            <ul>
+                <li class="active"><a href="index.html">Головна</a></li>
+                <li ><a href="Fishing.html">Рибалка</a></li>
+                <li ><a href="Hunting.html">Полювання</a></li>
+                <li ><a href="Licenses.html">Ліцензії</a></li>
+                <li ><a href="Rules.html">Закони</a></li>
+                <li ><a href="contactsForUsers.html">Контакти</a></li>
+                <li ><a href="Anouns.html">Відгуки</a></li>
+                <li ><a href="fishingForReg.html">Трофеї</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</div>
+<!-- /Head -->
+<form action="http://localhost:3005/js/authenticate-controller" method="post">
+
+    <div id="login">
+        <h4 id="authorization">Авторизація</h4>
+        <div id="slide">
+            <input type="email" name="uEmail" id="uEmail" placeholder="Email" pattern="^[-._a-z0-9]+@(?:[a-z0-9][-a-z0-9]+\.)+[a-z]{2,6}$" required autofocus /><br />
+            <input type="password" name="uPassword" id="uPassword" placeholder="Password" pattern="^[-.A-Za-zА-Яа-яЁё0-9]{7,16}" required /><br />
+            <a href="http://localhost:3000/register.html"> Реєстрація</a>
+            <input type="submit" value="Прийняти" id = "Submit">
+        </div>
+    </div>
+</form>
+<!--Banner for page-->
+<div id="slider">
+    <div id="polosa">
+        <a href="#rules bowMan img" title="Полювання"><img src="img/Header/BowMan.jpeg"  /></a>
+        <a href="#rules lakeWithMountains img" title="Риболовля "><img src="img/Header/LakeWithMounains.jpeg"  /></a>
+        <a href="#rules mountainsGreen img" title="Добування звірів"><img src="img/Header/MountainsGreen.jpeg"  /></a>
+        <a href="#rules mountainsWithClouds img" title="Сучасна техніка, транспортні засоби"><img src="img/Header/MountainsWithClouds.jpeg"  /></a>
+        <a href="#rules mountainsWithWater img" title="Риболовля – це древній інстинкт предків"><img src="img/Header/MountainsWithWater.jpeg"  /></a>
+        <a href="#rules spinning img" title="риболовля – такий же повноцінний відпочинок і розвага"><img src="img/Header/Spinning.jpeg"  /></a>
+        <a href="#rules water img" title="Види рибалки: "><img src="img/Header/Water.jpeg"  /></a>
+        <a href="#rules winterMountains img" title="Види полювання: "><img src="img/Header/WinterMountais.jpeg"  /></a>
+    </div>
+</div>
+<!-- /Banner for page-->
+<button class="down" >Вниз</button>
+<!-- Main contain-->
+<div id="main">
+
+    <!-- Featured -->
+    <div class="container">
+        <div class="row">
+            <section class="3u">
+                <a href="#" class="image full"><img src="img/Fishtrophy.jpg"></a>
+                <p><b>Сучасна риболовля</b> – відпочинок, спосіб зняття стресу і спорт. Риба в природних водоймах поступово
+                    зникає, тому не контрольований вилов риби може привести до повного зникнення окремих видів. Тому в
+                    розвинених країнах на законодавчому рівні введені в дію обмежувальні санкції по вилову риби.
+                    Наприклад, особливості риболовлі в США: в кожній водоймі дозволяється ловити певну кількість риби,
+                    а в деяких водоймах рибалки навіть зобов’язані випускати спійману рибу.</p>
+            </section>
+            <section class="3u">
+                <a href="#" class="image full"><img src="img/HuntTrophy.jpg"></a>
+                <p><b>Полювання в Україні </b> мало давні й міцні традиції. Питома вага цього заняття в господарській системі, обсяги й способи мисливства склалися історично і залежали від багатьох факторів. Насамперед цьому сприяли природно-кліматичні та географічні умови: у лісах водилось чимало дичини — вовки, ведмеді, вепри, олені, борсуки, лисиці, зайці, куниці тощо, а також нині втрачені тури, дикі коні, зубри, лосі, різноманітне птаство — качки, гуси, куріпки, дрофи, у ріках — видри та бобри.</p>
+            </section>
+            <section class="3u">
+                <a href="#" class="image full"><img src="img/HuntWeapon.jpg"></a>
+                <p><b>Успіх загінного полювання </b>на кабанів великою мірою залежить від керівника полювання, його знання території і вміння розставити мисливців у більш ймовірних місцях виходу кабанів. Важливу роль відіграє напрям вітру. При полюванні на кабана бажано використовувати собак, які допомагають не лише підняти звіра з густих кущів, а й знайти пораненого. Захоплюючим і результативним є полювання на кабанів з собаками (повинні бути натренованими і беззаперечно брати кабана).</p>
+            </section>
+            <section class="3u">
+                <a href="#" class="image full"><img src="img/Vydka.jpg"></a>
+                <p><b>Особливості риболовлі</b> Залежно від пори року, буває літня риболовля і зимова риболовля. Місце рибнолі ловлі визначає тип риболовлі – морська або прісновода (річкова, озерна) риболовля. Рибалка може ловити рибу з човна або з берега, і використати різноманітні снасті для риболовлі: поплавці, спінінг, нахлист, жерлицю, сбіруліно, вудки та ін. Ловля мирної (білої) риби кардинально відрізняється від вилову хижої риби не лише місцем для риболовлі, але і риболовецькими снастями.</p>
+            </section>
+        </div>
+    </div>
+    <!-- /Featured-->
+
+
+    <!--Main Content-->
+    <div class="container">
+        <div class="divider"></div>
+        <div class="row">
+            <div class="6u">
+                <section>
+                    <header>
+                        <h2>Загальні принципи полювання та рибальства</h2>
+                    </header>
+                        <h3>Полювання <a name="rules bowMan img"></a></h3>
+                    <hr>
+                            <p>Залежно від засобів <a name="rules mountainsGreen img"></a> добування звірів, а також птахів розрізняють рушничну полювання, полювання з
+                            ловчими тваринами (хортами собаками, хижими птахами). Поряд з даними атрибутами активного полювання
+                            досить широко поширені пристосування вловлюють тварин фабричного, кустарного виробництва (мережі,
+                            петлі, капкани), а також сміливо з каменю, льоду, дерева та інші місцеві матеріали, які виготовляють
+                            самі мисливці безпосередньо в угіддях (плашки, кулёми, пащі).</p>
+
+                            <p>Для вилову дичини живцем останнім часом для мічення та інших експериментальних цілей використовують
+                            снодійні, а також обездвіжівается препарати. Подібні речовини вводять за допомогою спеціальних куль,
+                            вистрілюються шприців, а це відкриває прикладне, новий напрямок у сфері рушничного полювання. Історичні
+                            процеси, як правило, визначають широкий розвиток або, навпаки, забуття, заборона, а часом і відродження
+                            тих чи інших методів полювання. Недозволено, наприклад, застосування загальнонебезпечним методів добування
+                            дичини — великих ведмежих капканів, ловчих ям, насторожених рушниць, самострілів. Ці знаряддя лову, як петлі
+                            і сильця, застосовувати дозволено тільки при видобутку гризунів, які шкодять сільському господарству (хом’яків, ховрахів).</p>
+
+                            <p>Сучасна техніка, транспортні засоби <a name="rules mountainsWithClouds img"></a>дозволяють не тільки добувати, а й повністю винищувати тварин,
+                            заганяючи або відстрілюючи їх за допомогою авіації, автотранспорту та мототранспорту, катерів і моторних
+                            човнів. Застосування з метою полювання таких засобів заборонено законом. Виняток лише робиться за вказівкою
+                            органів госохотінспекціі, наприклад, для регулювання в певних районах чисельності вовків. На сьогоднішній
+                            день серед мисливців найбільшого поширення, а також перспективи подальшого розвитку зберігає рушнична полювання.
+                            Рушнична охота, остаточним моментом якої вважається постріл по дичині, досить різноманітна. Щоб добути бажаний трофей
+                            хорошим пострілом мисливець повинен, в першу чергу, наблизитися до видобутку на відстань, яке доступне для його зброї.
+                            І залежно від того, яким чином мисливець досягає цієї мети, розрізняють кілька методів (способів) збройової полювання.</p>
+                    <h3>Риболовля <a name="rules lakeWithMountains img"></a></h3>
+                    <hr>
+                        <p>Риболовля – популярна розвага для чоловіків і активний відпочинок, що дозволяє не лише розслабитися,
+                            помилуватися красою природи, але і самостійно добути свіжу рибу.</p>
+
+                        <p>Риболовля – це древній інстинкт предків, <a name="rules mountainsWithWater img"></a>для яких рибний вилов, також як і полювання, був одним
+                            з джерел харчування. Тому риболовля і полювання в Україні і Росії – дуже популярні види відпочинку на природі.</p>
+
+                        <p>І все-таки риболовля – такий же повноцінний відпочинок і розвага,<a name="rules spinning img"></a> як і полювання, навіть якщо
+                            свій рибний вилов Ви не зможете з’їсти. Справжній рибалка отримує задоволення від техніки ловлі
+                            риби, покупки спеціальних снастей і спілкування з друзями-рибалками. Приємний і корисний бонус
+                            – такий активний відпочинок , як риболовля, що припускає постійне перебування на свіжому повітрі,
+                            обов’язково зміцнить і загартує Ваш організм.</p>
+                </section>
+            </div>
+            <div id="sidebar1" class="3u">
+                <section>
+                    <header>
+                        <h2>Види рибалки: <a name="rules water img"></a></h2>
+                    </header>
+                    <ul class="default alt">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/4LA80bLWyko" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/3pUbDcaay0E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/xeiRXEoZVfA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/-W3T_a2KF8g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/628UxseW8Wo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </ul>
+                    </section>
+            </div>
+            <div id="sidebar2" class="3u">
+                <section>
+                    <header>
+                        <h2>Види полювання: <a name="rules winterMountains img"></a></h2>
+                    </header>
+                    <ul class="default alt">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/T3vtdhWF4Cg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/edoJAUTWCKo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6vR3DxuIRyg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/kCTyjc07b3Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5attalLaBEw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </ul>
+                </section>
+        </div>
+        </div>
+    </div>
+    <!-- /Main Content -->
+</div>
+<!-- /Main -->
+
+<!-- Footer -->
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="6u">
+                <section>
+                    <pre>FishingAndHunting©2017-2018 | Полювання та риболовля                                           <a href="#">Наверх</a></pre>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Footer -->
+</body>
+</html>

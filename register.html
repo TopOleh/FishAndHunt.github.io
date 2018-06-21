@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+
+    <link rel="stylesheet" href="css/Styles.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/register.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+<form action="http://localhost:3005/js/register-controller" method="post">
+    <div class="testbox">
+        <h1>Registration</h1>
+        <a href="index.html">Головна</a>
+        <form action="/">
+            <div class="accounttype">
+                <input type="radio" value="Hunter" id="radioOne" name="uHobby" checked/>
+                <label for="radioOne" class="radio">Hunter</label>
+                <input type="radio" value="Fisher" id="radioTwo" name="uHobby" />
+                <label for="radioTwo" class="radio">Fisher</label>
+            </div>
+            <label id="icon " for="uEmail"><i class="icon-envelope "></i></label>
+            <input type="email" name="uEmail" id="uEmail" placeholder="Email" pattern="^[-._a-z0-9]+@(?:[a-z0-9][-a-z0-9]+\.)+[a-z]{2,6}$" required autofocus/><br />
+            <label id="icon  " for="uFullName"><i class="icon-user"></i></label>
+            <input type="text" name="uFullName" id="uFullName" placeholder="Name" required/><br />
+            <label id="icon" for="uPassword"><i class="icon-shield"></i></label>
+            <input type="password" name="uPassword" id="uPassword" placeholder="Password" pattern="^[-.A-Za-zА-Яа-яЁё0-9]{7,16}" required minlength="7"/>
+            <div class="gender">
+                <input type="radio" value="Male" id="male" name="uGender" checked/>
+                <label for="male" class="radio" chec>Male</label>
+                <input type="radio" value="Female" id="female" name="uGender" />
+                <label for="female" class="radio">Female</label>
+            </div>
+            <p>Натискаючи кнопку "Прийняти" ви погоджуєтесь із  <a href="#" >Політикою Конфіденційності сайту</a>.</p>
+                <input type="reset" value="Відмінити" class="register reset">
+                <input type="submit" value="Прийняти" id="registered" >
+        </form>
+    </div>
+</form>
+<!-- Footer -->
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="6u">
+                <section>
+                    <pre>FishingAndHunting©2017-2018 | Полювання та риболовля                                           <a href="#">Наверх</a></pre>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Footer -->
+
+</body>
+</html>

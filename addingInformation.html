@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Додавання рибки, тваринки чи місця</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/Styles.css">
+    <script src="js/common.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body class="homepage">
+<!-- Head-->
+<div id="head" >
+    <div id="logo">
+        <div class="container">
+            <!-- Logo -->
+            <h1><a href="#" style="font-family: 'Bodoni MT Black'">риболовля та полювання</a></h1>
+        </div>
+    </div>
+    <div class="container">
+
+        <!-- Nav - menu for pages-->
+        <nav id="nav">
+            <ul>
+                <li ><a href="index.html">Головна</a></li>
+                <li class="active"><a href="addingInformation.html">Для додавання інформації</a></li>
+                <li ><a href="contactsForUsers.html">Контакти</a></li>
+                <li ><a href="anonsForRegistered.html">Відгук</a></li>
+                <li ><a href="fishingForReg.html">Трофеї</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</div>
+<!-- /Head -->
+<!--Banner for page-->
+<div id="slider">
+    <div id="polosa">
+        <img src="img/Header/BowMan.jpeg"  />
+        <img src="img/Header/LakeWithMounains.jpeg"  />
+        <img src="img/Header/MountainsGreen.jpeg"  />
+        <img src="img/Header/MountainsWithClouds.jpeg"  />
+        <img src="img/Header/MountainsWithWater.jpeg"  />
+        <img src="img/Header/Spinning.jpeg"  />
+        <img src="img/Header/Water.jpeg"  />
+        <img src="img/Header/WinterMountais.jpeg"  />
+    </div>
+</div>
+<!-- /Banner for page-->
+<div class="addMain">
+        <section>
+            <header>
+                <h2>Тут ти зможеш додати інформацію про тварину та рибу!</h2>
+            </header>
+        </section>
+
+    <form action="http://localhost:3005/js/addingToDB" method="post">
+    <!-- Main contain-->
+        <div class="inputTrophies">
+            <section>
+                <header>
+                    <h4>Додавання рибки</h4>
+                </header>
+            </section>
+            <input type="text" id="fiName" name="fiName" placeholder="Назва риби" pattern="^[-._A-Za-zА-Яа-яЁё]{1,}$"  autofocus><br />
+
+            <input type="radio" value="Живе в соленій воді." id="radioOne" name="fiType" checked>
+            <label for="radioOne" class="radio">Живе в соленій воді.</label><br />
+            <input type="radio" value="Живе в прісній воді." id="radioTwo" name="fiType">
+            <label for="radioTwo" class="radio">Живе в прісній воді.</label><br />
+            <input type="radio" value="Може жити як в соленій так і в прісній воді." id="radioThree" name="fiType" >
+            <label for="radioThree" class="radio">Може жити як в соленій так і в прісній воді.</label><br />
+
+            <input type="text" value="0.01" id="fiSize" name="fiSize" placeholder="Розмір риби" pattern="^[0-9]{1,}+.[0-9]{1,}$" ><br />
+            <input type="text" id="fiFavoriteBait" name="fiFavoriteBait" placeholder="Зловлено на приманку" pattern="^[-._A-Za-zА-Яа-яЁё0-9]{1,}$" ><br />
+            <section>
+                <header>
+                    <h4>Додавання тварини</h4>
+                </header>
+            </section>
+                <input type="text" id="aName" name="aName" placeholder="Назва тварини" pattern="^[-._A-Za-zА-Яа-яЁёі\s]{1,}$" ><br />
+
+                <input type="radio" value="М'ясоїдна тварина" id="radioFour" name="aType" checked>
+                <label for="radioFour" class="radio">М'ясоїдна тварина.</label><br />
+                <input type="radio" value="Рослиноїдна тварина" id="radioFive" name="aType" >
+                <label for="radioFive" class="radio">Травоїдна тварина.</label><br />
+                <input type="radio" value="Всеїдна тварина." id="radioSix" name="aType">
+                <label for="radioSix" class="radio">Всеїдна тварина.</label><br />
+
+                <input type="text" value="0.01" id="aSize" name="aSize" placeholder="Розмір впольованої тварини" pattern="^[0-9]{1,}+.[0-9]{1,}$" ><br />
+                <input type="text" id="aFavoriteBait" name="aFavoriteBait" placeholder="Впольовано з допомогою" pattern="^[-._A-Za-zА-Яа-яЁё0-9і\s]{1,}$" ><br />
+
+            <input type="submit" value="Прийняти" >
+        </div>
+            <!-- /Main Content -->
+    <!-- /Main -->
+    </form>
+
+    <!--<form action="http://localhost:3005/js/addingToDB" method="post">-->
+    <!--&lt;!&ndash; Main contain&ndash;&gt;-->
+            <!--&lt;!&ndash;Main Content&ndash;&gt;-->
+        <!--<div class="inputTrophies">-->
+
+            <!--<input type="text" id="aName" name="aName" placeholder="Назва тварини" pattern="^[-._A-Za-zА-Яа-яЁёі\s]{1,}$" required autofocus><br />-->
+
+            <!--<input type="radio" value="М'ясоїдна тварина" id="radioFour" name="aType" checked>-->
+            <!--<label for="radioFour" class="radio">М'ясоїдна тварина.</label><br />-->
+            <!--<input type="radio" value="Рослиноїдна тварина" id="radioFive" name="aType" >-->
+            <!--<label for="radioFive" class="radio">Травоїдна тварина.</label><br />-->
+            <!--<input type="radio" value="Всеїдна тварина." id="radioSix" name="aType">-->
+            <!--<label for="radioSix" class="radio">Всеїдна тварина.</label><br />-->
+
+            <!--<input type="text" value="0.01" id="aSize" name="aSize" placeholder="Розмір впольованої тварини" pattern="^[0-9]{1,}+.[0-9]{1,}$" required><br />-->
+            <!--<input type="text" id="aFavoriteBait" name="aFavoriteBait" placeholder="Впольовано з допомогою" pattern="^[-._A-Za-zА-Яа-яЁё0-9і\s]{1,}$" ><br />-->
+            <!--<input type="file" name="aPicture"><br />-->
+            <!---->
+            <!--<input type="submit" value="Прийняти" >-->
+        <!--</div>-->
+            <!--&lt;!&ndash; /Main Content &ndash;&gt;-->
+    <!--&lt;!&ndash; /Main &ndash;&gt;-->
+    <!--</form>-->
+</div>
+<!-- Footer -->
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="6u">
+                <section>
+                    <pre>FishingAndHunting©2017-2018 | Полювання та риболовля                                           <a href="#">Наверх</a></pre>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Footer -->
+
+
+</body>
+</html>

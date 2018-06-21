@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакти</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/Styles.css">
+
+    <script src="js/common.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body class="homepage">
+<!-- Head-->
+<div id="head" >
+    <div id="logo">
+        <div class="container">
+
+            <!-- Logo -->
+            <h1><a href="#" style="font-family: 'Bodoni MT Black'">риболовля та полювання</a></h1>
+        </div>
+    </div>
+    <div class="container">
+
+        <!-- Nav - menu for pages-->
+        <nav id="nav">
+            <ul>
+                <li ><a href="index.html">Головна</a></li>
+                <li ><a href="Fishing.html">Рибалка</a></li>
+                <li ><a href="Hunting.html">Полювання</a></li>
+                <li ><a href="Licenses.html">Ліцензії</a></li>
+                <li ><a href="Rules.html">Закони</a></li>
+                <li class="active"><a href="contactsForUsers.html">Контакти</a></li>
+                <li ><a href="Anouns.html">Відгуки</a></li>
+                <li ><a href="fishingForReg.html">Трофеї</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</div>
+<!-- /Head -->
+<form action="http://localhost:3005/js/authenticate-controller" method="post">
+
+    <div id="login">
+        <h4 id="authorization">Авторизація</h4>
+        <div id="slide">
+            <input type="email" name="uEmail" id="uEmail" placeholder="Email" pattern="^[-._a-z0-9]+@(?:[a-z0-9][-a-z0-9]+\.)+[a-z]{2,6}$" required autofocus /><br />
+            <input type="password" name="uPassword" id="uPassword" placeholder="Password" pattern="^[-.A-Za-zА-Яа-яЁё0-9]{7,16}" required /><br />
+            <a href="http://localhost:3000/register.html"> Реєстрація</a>
+            <input type="submit" value="Прийняти" id = "Submit">
+        </div>
+    </div>
+</form>
+<!--Banner for page-->
+<div id="slider">
+    <div id="polosa">
+        <img src="img/ContactsImg/zbruyiStyr.jpg"  />
+        <img src="img/ContactsImg/ygiddy.jpg"  />
+        <img src="img/ContactsImg/huntCyman.jpg"  />
+        <img src="img/ContactsImg/Chernigiv.jpg"  />
+        <img src="img/ContactsImg/gonefish.jpg"  />
+        <img src="img/ContactsImg/Hmelnytskii.jpg"  />
+        <img src="img/ContactsImg/litvinovka.jpg"  />
+        <img src="img/ContactsImg/images%20(1).jpg"  />
+
+    </div>
+</div>
+<button class="down" >Вниз</button>
+<!-- /Banner for page-->
+<form action="http://localhost:3005/js/getInformOblast" method="post">
+        <div class="places">
+            <input type="text" name="opOblast" id="opOblast" placeholder="Область господарства" required autofocus accesskey="1"/><br />
+            <input type="text" name="ugiddja" id="ugiddja" placeholder="Тип угіддя(мисливські/рибальські)"/><br />
+            <input type="reset" value="Відмінити" class="register reset">
+            <input type="submit" value="Прийняти" >
+        </div>
+</form>
+<!-- Footer -->
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="6u">
+                <section>
+                    <pre>FishingAndHunting©2017-2018 | Полювання та риболовля                                           <a href="#">Наверх</a></pre>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Footer -->
+</body>
+</html>

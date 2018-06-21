@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anons</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/Styles.css">
+    <script src="js/common.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body class="homepage">
+<!-- Head-->
+<div id="head" >
+    <div id="logo">
+        <div class="container">
+
+            <!-- Logo -->
+            <h1><a href="#" style="font-family: 'Bodoni MT Black'">риболовля та полювання</a></h1>
+        </div>
+    </div>
+    <div class="container">
+
+        <!-- Nav - menu for pages-->
+        <nav id="nav">
+            <ul>
+                <li ><a href="index.html">Головна</a></li>
+                <li ><a href="Fishing.html">Рибалка</a></li>
+                <li ><a href="Hunting.html">Полювання</a></li>
+                <li ><a href="Licenses.html">Ліцензії</a></li>
+                <li ><a href="Rules.html">Закони</a></li>
+                <li ><a href="contactsForUsers.html">Контакти</a></li>
+                <li class="active"><a href="Anouns.html">Відгуки</a></li>
+                <li ><a href="fishingForReg.html">Трофеї</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</div>
+<!-- /Head -->
+<form action="http://localhost:3005/js/authenticate-controller" method="post">
+
+    <div id="login">
+        <h4 id="authorization">Авторизація</h4>
+        <div id="slide">
+            <input type="email" name="uEmail" id="uEmail" placeholder="Email" pattern="^[-._a-z0-9]+@(?:[a-z0-9][-a-z0-9]+\.)+[a-z]{2,6}$" required autofocus /><br />
+            <input type="password" name="uPassword" id="uPassword" placeholder="Password" pattern="^[-.A-Za-zА-Яа-яЁё0-9]{7,16}" required /><br />
+            <a href="http://localhost:3000/register.html"> Реєстрація</a>
+            <input type="submit" value="Прийняти" id = "Submit">
+        </div>
+    </div>
+</form>
+<!--Banner for page-->
+<div id="slider">
+    <div id="polosa">
+        <img src="img/AnonsImg/poltava-2415088_1280.jpg"  />
+        <img src="img/AnonsImg/yaremche-3427053_1280.jpg"  />
+        <img src="img/AnonsImg/hunting-797941_1280.jpg"  />
+        <img src="img/AnonsImg/tree-1687226_1280.jpg"  />
+        <img src="img/AnonsImg/landscape-2239074_1280.jpg"  />
+        <img src="img/AnonsImg/animal-17843_1280.jpg"  />
+        <img src="img/AnonsImg/mountains-930290_1280.jpg"  />
+        <img src="img/AnonsImg/landscape-2448761_1280.jpg"  />
+    </div>
+</div>
+<!-- /Banner for page-->
+
+<!-- Main contain-->
+<div id="main">
+    <!--Main Content-->
+    <div class="container">
+        <div class="divider"></div>
+        <div class="row">
+            <div class="6u">
+                <section>
+                    <header>
+                        <h2>Пришліть будь ласка свій відгук нам на пошту. </h2>
+                        <p>Адміністрація буде вдячна за ваш відгук, в ньому можете вказати - що вам сподобалося,
+                            які ви бачити недоробки на даному сайті, щоб ви хотіли бачити тут нового, та що потребує оптимізації
+                            чи покращення.</p>
+                    </header>
+                    <form action="http://localhost:3005/js/emailAnounsSend" method="post">
+                        <div class="places" style="margin: 50px 0">
+                                    <input style="width: 500px;" type="email" name="email" id="email" placeholder="Email" pattern="^[-._a-z0-9]+@(?:[a-z0-9][-a-z0-9]+\.)+[a-z]{2,6}$" required autofocus /><br />
+                                    <input style="width: 500px;" type="password" name="password" id="password" placeholder="Password from post" pattern="^[-.A-Za-zА-Яа-яЁё0-9]{7,16}" required /><br />
+                                    <input style="width: 500px;" type="text" name="subject" id="subject" placeholder="Subject" /><br />
+                                    <textarea style="width: 500px;" name="textArea" id="textArea" placeholder="Ваш відгук." cols="30" rows="10"></textarea><br />
+                                    <input type="reset" value="Відмінити" class="register reset">
+                                    <input type="submit" value="Прийняти" >
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- /Main Content -->
+</div>
+<!-- /Main -->
+
+<!-- Footer -->
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="6u">
+                <section>
+                    <pre>FishingAndHunting©2017-2018 | Полювання та риболовля                                           <a href="#">Наверх</a></pre>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Footer -->
+</body>
+</html>
