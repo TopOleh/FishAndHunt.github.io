@@ -20,7 +20,7 @@ module.exports.authenticate=function(req,res){
                 decryptedString = cryptr.decrypt(results[0].uPassword);
                 if(uPassword==decryptedString){
                     if(uEmail==='dgtop997@gmail.com') {
-                        res.redirect('http://localhost:3000/Contacts.html');
+                        res.redirect('https://topoleh.github.io/FishAndHunt.github.io/Contacts.html');
                     }else {
                         let userInfo = "\n \n \n" + "Name: " + results[0].uFullName + "\n Email: " + results[0].uEmail;
 
@@ -28,7 +28,7 @@ module.exports.authenticate=function(req,res){
                             return userInfo;
                         };
                         // res.sendFile(path.join(__dirname, '../',  'authorozatedSuccess.html'));
-                        res.redirect('http://localhost:3000/anonsForRegistered.html')
+                        res.redirect('https://topoleh.github.io/FishAndHunt.github.io/anonsForRegistered.html')
                     }
                 }else{
                     res.json({

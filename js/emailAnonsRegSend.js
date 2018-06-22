@@ -24,5 +24,5 @@ module.exports.sendResonseReg = function (req, res) {
             console.log('Email sent: ' + info.response);
         }
     });
-    res.redirect('http://localhost:3000/anonsForRegistered.html');
+    res.redirect('https://topoleh.github.io/FishAndHunt.github.io/anonsForRegistered.html');
 };

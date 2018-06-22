@@ -17,7 +17,7 @@ module.exports.addingPlaceHuntObl = function ( req, res) {
             })
         }else {
             // res.sendFile(path.join(__dirname,'../','Success.html'));
-            res.redirect('http://localhost:3000/Contacts.html');
+            res.redirect('https://topoleh.github.io/FishAndHunt.github.io/Contacts.html');
         }
     });
 };

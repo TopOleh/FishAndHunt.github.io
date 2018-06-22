@@ -29,8 +29,8 @@ module.exports.viewInformOblast=function(req,res){
                 }
                 res.send("<ol style=' margin:0px 600px 50px; width: 450px; position:absolute; text-align: center; font-size: 18pt; border: 1px solid black;'>" + arr + "</ol>" +
                     "<footer style='position: fixed; bottom: 0;width: 100%;height: 5%; font-size: 20pt; background-color: antiquewhite; padding-left: 350px'>" +
-                    "<a style='padding-right: 350px' href='http://localhost:3000/index.html'>Головна</a>" +
-                    "<a style='padding-left: 350px' href='http://localhost:3000/contactsForUsers.html'>Змінити обасть</a>" +
+                    "<a style='padding-right: 350px' href='https://topoleh.github.io/FishAndHunt.github.io/index.html'>Головна</a>" +
+                    "<a style='padding-left: 350px' href='https://topoleh.github.io/FishAndHunt.github.io/contactsForUsers.html'>Змінити обасть</a>" +
                     "</footer>");
             }
 
@@ -81,8 +81,8 @@ module.exports.viewInformOblast=function(req,res){
                                 console.log(arr);
                                 res.send("<ol style=' margin:0px 600px 50px; width: 450px; position:absolute;text-align: center; font-size: 18pt; border: 1px solid black;'>" + arr + "</ol>" +
                                     "<footer style='position: fixed; bottom: 0;width: 100%;height: 5%; font-size: 20pt; background-color: antiquewhite; padding-left: 350px'>" +
-                                    "<a style='padding-right: 350px' href='http://localhost:3000/index.html'>Головна</a>" +
-                                    "<a style='padding-left: 350px' href='http://localhost:3000/fishingForReg'>Змінити трофей</a>" +
+                                    "<a style='padding-right: 350px' href='https://topoleh.github.io/FishAndHunt.github.io/index.html'>Головна</a>" +
+                                    "<a style='padding-left: 350px' href='https://topoleh.github.io/FishAndHunt.github.io/fishingForReg'>Змінити трофей</a>" +
                                     "</footer>");
                             }
                             console.log(arr);
@@ -90,8 +90,8 @@ module.exports.viewInformOblast=function(req,res){
                     }
                     if (!fish) res.send("<ol style=' margin:0px 600px 50px; width: 450px; position:absolute; text-align: center; font-size: 18pt; border: 1px solid black;'>" + arr + "</ol>" +
                         "<footer style='position: fixed; bottom: 0;width: 100%;height: 5%; font-size: 20pt; background-color: antiquewhite; padding-left: 350px'>" +
-                        "<a style='padding-right: 350px' href='http://localhost:3000/index.html'>Головна</a>" +
-                        "<a style='padding-left: 350px' href='http://localhost:3000/fishingForReg'>Змінити трофей</a>" +
+                        "<a style='padding-right: 350px' href='https://topoleh.github.io/FishAndHunt.github.io/index.html'>Головна</a>" +
+                        "<a style='padding-left: 350px' href='https://topoleh.github.io/FishAndHunt.github.io/fishingForReg'>Змінити трофей</a>" +
                         "</footer>");
                 }
             });

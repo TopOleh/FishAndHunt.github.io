@@ -24,5 +24,5 @@ module.exports.sendResonse = function (req, res) {
             console.log('Email sent: ' + info.response);
         }
     });
-    res.redirect('http://localhost:3000/index.html');
+    res.redirect('https://topoleh.github.io/FishAndHunt.github.io/index.html');
 };
