@@ -30,7 +30,7 @@ module.exports.addingFishInform = function ( req, res) {
                 })
             }else {
                 // res.sendFile(path.join(__dirname,'../','Success.html'));
-                res.redirect('http://localhost:3000/addingInformation.html');
+                res.redirect('https://topoleh.github.io/FishAndHunt.github.io/addingInformation.html');
             }
         });
     }else if (animal){
@@ -43,7 +43,7 @@ module.exports.addingFishInform = function ( req, res) {
                 })
             }else {
                 // res.sendFile(path.join(__dirname,'../','Success.html'));
-                res.redirect('http://localhost:3000/addingInformation.html');
+                res.redirect('https://topoleh.github.io/FishAndHunt.github.io/addingInformation.html');
             }
         });
     }
